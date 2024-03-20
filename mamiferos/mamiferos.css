@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background-color: #fffff0;
+}
+
+.principal {
+    display: flex;
+    max-width: 80%;
+    margin: 50px 10%;
+    list-style: none;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    background-color: #c0c0c0;
+}
+.principal .li {
+    cursor: pointer;
+}
+
+.logo {
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width:55px;
+    height: 55px;
+}
+
+.principal li:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.principal li a {
+    text-decoration: none;
+}
+
+.desplegable {
+    position: absolute;
+    list-style: none;
+    background-color: dimgray;
+    width: 150px;
+    display: none;
+}
+
+.desplegable li{
+    margin: 10px;
+    text-align: center;
+}
+
+.desplegable li a {
+    color: white;
+    text-decoration: none;
+}
+
+.principal li:hover .desplegable {
+    display: block;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+    text-align: center;
+}
+
+.informacion {
+    display: flex;
+    height: 400px;
+}
+
+.informacion p {
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.informacion img {
+    margin-top: 20px;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0,0,0.4);
+    position: relative;
+}
+
+.p {
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.img {
+    margin: 5px;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0,0,0.4);
+    position: relative;
+}
+
+.galeria {
+    display: flex;
+    padding: 5px;
+    height: 600px;
+}
+.columna {
+    flex: 25%;
+    padding: 5px;
+    height: 600px;
+}
+.columna img {
+    width: 100%;
+}
+
+#caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
